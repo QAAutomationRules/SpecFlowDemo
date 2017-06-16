@@ -20,8 +20,6 @@ c:\users\kyle\documents\visual studio 2012\Projects\SpecflowSeleniumWebDriverDem
 c:\users\kyle\documents\visual studio 2012\Projects\SpecflowSeleniumWebDriverDemoTests\SpecflowSeleniumWebDriverDemoTests\bin\Debug\WebDriver.xml
 c:\users\kyle\documents\visual studio 2012\Projects\SpecflowSeleniumWebDriverDemoTests\SpecflowSeleniumWebDriverDemoTests\bin\Debug\WebDriver.Support.xml
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\Default.srprofile
-C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\chromedriver.exe
-C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\IEDriverServer.exe
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\SpecflowSeleniumWebDriverDemoTests.dll.config
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\SpecflowSeleniumWebDriverDemoTests.dll
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\SpecflowSeleniumWebDriverDemoTests.pdb
@@ -39,5 +37,8 @@ C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\WebDriver.
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\WebDriver.Support.xml
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\obj\Debug\SpecflowSeleniumWebDriverDemoTests.dll
 C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\obj\Debug\SpecflowSeleniumWebDriverDemoTests.pdb
-C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\geckodriver.exe
-C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\phantomjs.exe
+C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\Drivers\chromedriver.exe
+C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\Drivers\geckodriver.exe
+C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\Drivers\IEDriverServer.exe
+C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\bin\Debug\Drivers\phantomjs.exe
+C:\SpecDemo\SpecFlowDemo\SpecflowSeleniumWebDriverDemoTests\obj\Debug\SpecflowSeleniumWebDriverDemoTests.csprojResolveAssemblyReference.cache

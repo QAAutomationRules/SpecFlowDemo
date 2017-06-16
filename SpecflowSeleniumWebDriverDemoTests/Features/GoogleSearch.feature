@@ -7,10 +7,10 @@ Background: Go to Google Home Page
 	Given I go to the Google Home Page
 
 @SMOKE
-Scenario Outline: Search for Websites on Google Search Page
+Scenario Outline: Search for relevant Websites from the Google Search Page given a Search word
 	Given I enter a search word <Word> into the Google search field
 	When I press the Search button
-	Then results related to search word should display
+	Then the search results should display Websites that are related to the search word
 
 Examples:
 

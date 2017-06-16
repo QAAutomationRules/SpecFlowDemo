@@ -71,7 +71,7 @@ namespace SpecflowSeleniumWebDriverDemoTests.Features
 #line hidden
         }
         
-        public virtual void SearchForWebsitesOnGoogleSearchPage(string word, string[] exampleTags)
+        public virtual void SearchForRelevantWebsitesFromTheGoogleSearchPageGivenASearchWord(string word, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "SMOKE"};
@@ -79,7 +79,7 @@ namespace SpecflowSeleniumWebDriverDemoTests.Features
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for Websites on Google Search Page", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for relevant Websites from the Google Search Page given a Search word", @__tags);
 #line 10
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -89,24 +89,26 @@ this.FeatureBackground();
 #line 12
  testRunner.When("I press the Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
- testRunner.Then("results related to search word should display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the search results should display Websites that are related to the search word", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Search for Websites on Google Search Page, Cheese", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Search for relevant Websites from the Google Search Page given a Search word, Che" +
+            "ese", new string[] {
                 "SMOKE"}, SourceLine=17)]
-        public virtual void SearchForWebsitesOnGoogleSearchPage_Cheese()
+        public virtual void SearchForRelevantWebsitesFromTheGoogleSearchPageGivenASearchWord_Cheese()
         {
-            this.SearchForWebsitesOnGoogleSearchPage("Cheese", ((string[])(null)));
+            this.SearchForRelevantWebsitesFromTheGoogleSearchPageGivenASearchWord("Cheese", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Search for Websites on Google Search Page, Hamburgers", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Search for relevant Websites from the Google Search Page given a Search word, Ham" +
+            "burgers", new string[] {
                 "SMOKE"}, SourceLine=17)]
-        public virtual void SearchForWebsitesOnGoogleSearchPage_Hamburgers()
+        public virtual void SearchForRelevantWebsitesFromTheGoogleSearchPageGivenASearchWord_Hamburgers()
         {
-            this.SearchForWebsitesOnGoogleSearchPage("Hamburgers", ((string[])(null)));
+            this.SearchForRelevantWebsitesFromTheGoogleSearchPageGivenASearchWord("Hamburgers", ((string[])(null)));
 #line hidden
         }
         

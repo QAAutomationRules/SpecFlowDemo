@@ -22,7 +22,8 @@ namespace SpecflowSeleniumWebdriverDemo
         public void GivenIEnterASearchWordCheeseIntoTheGoogleSearchField(string searchWord)
         {
             // Find the text input element by its name
-            IWebElement query = ScenarioContext.Current.Get<IWebDriver>("IWebDriver").FindElement(By.XPath("//input[@name='q']"));
+            IWebElement query = ScenarioContext.Current.Get<IWebDriver>("IWebDriver")
+                .FindElement(By.XPath("//input[@name='q']"));
 
             // Enter something to search for
             query.SendKeys(searchWord);
@@ -35,12 +36,14 @@ namespace SpecflowSeleniumWebdriverDemo
         public void WhenIPressTheSearchButton()
         {
             // Now submit the form. WebDriver will find the form for us from the element
-            IWebElement searchButton = ScenarioContext.Current.Get<IWebDriver>("IWebDriver").FindElement(By.XPath("//button[@value='Search']"));
+            IWebElement searchButton = ScenarioContext.Current.Get<IWebDriver>("IWebDriver")
+                .FindElement(By.XPath("//button[@value='Search']"));
             searchButton.Click();
         }
 
-        [Then(@"results related to search word should display")]
-        public void ThenResultsRelatedToSearchWordShouldDisplay()
+
+        [Then(@"the search results should display Websites that are related to the search word")]
+        public void ThenTheSearchResultsShouldDisplayWebsitesThatAreRelatedToTheSearchWord()
         {
             var driver = ScenarioContext.Current.Get<IWebDriver>("IWebDriver");
 
@@ -61,7 +64,8 @@ namespace SpecflowSeleniumWebdriverDemo
         public void GivenIEnterAWordInTheSearchField(string searchWord)
         {
             // Find the text input element by its name
-            IWebElement query = ScenarioContext.Current.Get<IWebDriver>("IWebDriver").FindElement(By.XPath("//input[@name='q']"));
+            IWebElement query = ScenarioContext.Current.Get<IWebDriver>("IWebDriver")
+                .FindElement(By.XPath("//input[@name='q']"));
 
             // Enter something to search for
             query.SendKeys(searchWord);
@@ -86,18 +90,19 @@ namespace SpecflowSeleniumWebdriverDemo
         {
             IWebDriver driver = null;
 
-            switch (browser)
+            switch (browser.ToLower())
             {
-                case "FireFox":
+                case "firefox":
                     driver = new FirefoxDriver();
                     break;
-                case "IE":
+                case "ie":
                     driver = new InternetExplorerDriver();
                     break;
-                case "Chrome":
-                    driver = new ChromeDriver();
+                case "chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    driver = new ChromeDriver(@"..\Drivers\", options);
                     break;
-                case "PhantonJS":
+                case "phantomjs":
                     driver = new PhantomJSDriver();
                     break;
                 default:
